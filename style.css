@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Montserrat:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-div{
+    width: 100vw;
+    height: 100vh;
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.main-div h1{
+    text-align: center;
+    width: 100%;
+    font-size: 5rem;
+    position: absolute;
+    background-color: wheat;
+    padding: 0.5rem 0 0.5rem 0;
+    top: 0;
+}
+.child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+}
+::placeholder{
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family:'Comfortaa', sans-serif ;
+}
+.entry{
+    width: 85vw;
+    height: 5rem;
+    margin: 1.7rem;
+    border-radius: 0.9rem;
+    outline: none;
+    border: 0.13rem solid #fff;
+    background-color: #2c3e50;
+    transition: all 0.2s;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+}
+.entry:focus{
+    border: 0.2rem solid rgb(38, 182, 248);
+    box-shadow: 1px 0px 4px 1px rgb(38, 182, 248) ;
+}
+.entry:focus::placeholder{
+    visibility: hidden;
+}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{
+    visibility: hidden;
+    margin: 0;
+}
+#btn{
+    width: 40vw;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    margin: 2.4rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #44bd32;
+    cursor: pointer;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #dff9fb;
+    transition: all 0.25s;
+}
+
+#btn:hover{
+    background-color: #dff9fb;
+    color: #44bd32;
+}
+.child h3{
+    font-size: 4rem;
+    color: #fff;
+}
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width:320px){
+    html{
+        font-size: 40%;
+    }
+}
