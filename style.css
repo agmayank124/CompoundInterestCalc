@@ -91,9 +91,21 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     html{
         font-size: 50%;
     }
+    h3{
+        font-size: 4rem !important;
+    }
 }
-@media (max-width:320px){
+@media (max-width:330px){
     html{
         font-size: 40%;
+    }
+    h1{
+        font-size: 7rem;
+    }
+    h3{
+        font-size: 3.6rem !important;
+    }
+    #btn{
+        width: 60vw;
     }
 }
